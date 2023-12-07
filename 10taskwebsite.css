@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
     /* background-color:  rgb(241, 230, 186); */
+}
+body{
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 .main{
     background-color: #f7edc4;
@@ -93,6 +98,9 @@ button.btn01{
     top: 76%;
     right: 63%;
 }
+.books{
+    
+}
 .bookt{
     margin-left: 5%;
     font-size: 21px;
@@ -106,8 +114,9 @@ button.btn01{
     border: 2px solid white;
     background-color: whitesmoke;
     border-radius: 20px;
+    /* font-size: 20px; */
     height: 60%;
-    margin: 0 30px 0 30px;
+    margin: 411px 30px 0 30px;
     filter: drop-shadow(0px 5px 10px  black);
 
 }
@@ -227,7 +236,8 @@ button.read{
     border-radius: 20px;
     padding: 20px;
 }
-/* page-3 */
+/* ................page-3................. */
+
 .page-3{
     background-color: #f7edc4;
 }
@@ -236,11 +246,16 @@ button.read{
 }
 .page003{
     text-align: center;
+    /* font-size: 30px; */
 }
 .page3p{
     color: teal;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
+}
+.page003,h1{
+    font-size: 30px;
+    
 }
 
 button.read-3{
@@ -257,6 +272,7 @@ button.read-3{
     /* position: absolute; */
     text-align: center;
     padding: 100px;
+    /* z-index: 1; */
 }
 .table01{
     position: absolute;
@@ -272,9 +288,264 @@ button.read-3{
     position: absolute;
     top: 335%;
     left: -20px;
+    /* z-index: 1; */
 }
 .table04{
     position: absolute;
     top: 335%;
     right: -20px;
+    /* z-index: 2; */
+}
+
+/* ................page 4............. */
+
+.page-4{
+    background-color: #f7edc4;
+    padding-left: 10%;
+    height: 750px;
+}
+.page04{
+    position: relative;
+}
+.story{
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10%;
+}
+.story h3{
+    color: orange;
+    font-size: 25px;
+}
+button.readmore{
+    background-color: rgb(239, 44, 44);
+    color: white;
+    border-radius: 20px ;
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+}
+.bottle01{
+    position: absolute;
+    top: 3%;
+    right: 35%;
+}
+.plant02{
+    position: absolute;
+    top: 1%;
+    right: 10%;
+}
+.img02{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+
+/* .................page-5............. */
+
+.page-5{
+    background-color: #f7edc4;
+
+}
+.page05{
+    display: flex;
+    justify-content: space-between;
+}
+.fresh{
+    font-size: 20px;
+    margin: auto;
+    font-weight: 600;
+}
+.fresh h3{
+    color: orange;
+}
+button.readm{
+    background-color: teal;
+    color:#f7edc4 ;
+    border-radius: 20px ;
+    height: 34px;
+    width: 108px;
+    margin-top: 20px;
+}
+
+/* ....................page--6.............. */
+
+.page-6{
+    background-color: #f7edc4;
+
+}
+.page06{
+    display: flex;
+     background-color: #faf8ef;
+     width: 85%;
+     height: 80%;
+     margin-left: 7%;
+    border-radius: 30px;
+    position: relative;
+
+}
+.worlds{
+    font-size: 20px;
+    margin: auto;
+    font-weight: 700;
+    margin-left: 2%;
+}
+button.reado{
+    background-color: rgb(239, 44, 44);
+    color:rgba(252, 243, 243, 0.929);
+    border-radius: 20px ;
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* .....................page--7.............. */
+
+
+.worlds h3{
+    color: teal;
+}
+.chef{
+    margin: auto;
+}
+.room{
+    position: absolute;
+    top: 660%;
+    right: 40%;
+}
+.john,.sara{
+    display: flex;
+    gap: 20px;
+    background-color: #faf8ef;
+    border-radius: 30px;
+    margin: auto;
+    padding: 1%;
+}
+.johnw,.saraw{
+    padding-top: 30px;
+}
+.stars{
+    display: flex;
+}
+
+.page-7{
+    background-color: #f7edc4;
+    padding: 2%;
+}
+.page07 h2 ,h3{
+    text-align: center;
+    font-size: 40px;
+}
+.page07 h3{
+    color: orange;
+}
+.box3{
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    padding: 60px 60px;
+    justify-content: space-evenly;
+
+}
+
+/* .........................page--8............ */
+
+.page-8{
+    background-color: #f7edc4;
+
+}
+.page08, h4{
+    /* color: orange; */
+}
+.page08{
+    padding: 40px;
+}
+.page08, h4, h1{
+    /* text-align: center; */
+    /* font-weight: 700; */
+}
+.suscribe{
+    text-align: center;
+}
+.suscribe h4{
+    color: orange;
+}
+.suscribe, h4, h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.name,.mail{
+    width: 70%;
+    height: 20px;
+    border: 1px solid black;
+    text-align: start;
+    height: 87px;
+    margin-top: 30px;
+    margin: auto;
+    border-radius: 35px;
+    background-color: #ccc1a3;
+    border: 2px solid #faf8ef;
+    padding: 30px;
+}
+.name{
+margin-top: 30px;
+
+}
+.mail{
+margin-top: 30px;
+
+}
+.message{
+    width: 70%;
+    height: 135px;
+    border: 1px solid black;
+    text-align: start;
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
+    border-radius: 35px;
+    background-color: #ccc1a3;
+    border: 2px solid #faf8ef;
+}
+button.send{
+    width: 289px;
+height: 65px;
+/* text-align: center; */
+margin-left: 38%;
+color: black;
+margin-top: 30px;
+border-radius: 33px;
+background-color: #6bb99c;
+border: 2px solid #faf8ef;
+}
+
+
+
+/* .............page--9.................. */
+
+.page-9{
+    background-color: orange;
+}
+.page09{
+    padding: 13%;
+}
+.table{
+    font-size: 20px;
+    gap: 80px;
+    display: flex;
+    line-height: 50px;
+    font-weight: 900;
+    justify-content: space-evenly;
+}
+.table h2{
+    color: white;
+
+}
+button.yellow{
+    width: 240px;
+height: 43px;
+border-radius: 31px;
+background-color: orange;
+border: 3px solid #656565;
 }

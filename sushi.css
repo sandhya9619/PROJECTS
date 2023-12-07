@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
   }
+  body *{
+    /* overflow: hidden; */
+  }
   header{
     display: block;
     background-image: url(../WEBSITE/IMAGE/backgroundimg01.png);
@@ -133,7 +136,7 @@
 
 .page-3{
   background-color: rgb(226, 173, 37);
-  /* overflow-x: hidden; */
+  /* overflow: hidden; */
 
 }
 .page003{
@@ -167,11 +170,11 @@
   top: 240%;
   right: 2%;
 }
-.shape34{
+/* .shape34{
   position: absolute;
   top: 300%;
   right: -4%;
-}
+} */
 .shape35{
   position: absolute;
   top: 310%;
@@ -352,9 +355,9 @@ button.btn{
   /*...................... media.............. */
 
 
-  @media (max-width: 575.98px) {
+  @media(max-width:1200px){
 
-    .main-text{
+    /* .main-text{
         font-size: 20;
     }
     .row{
@@ -363,7 +366,11 @@ button.btn{
     }
     .col-50{
         width: 50%;
-    }
+    } */
+    button.btn{
+      top: 58.55%;
+  }
+
    }
 
   

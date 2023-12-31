@@ -28,7 +28,7 @@
 .nav2{
     display: flex;
     line-height: 30px;
-    gap: 30px;
+    /* gap: 30px; */
 }
 .Nav2left, ul{
     list-style: none;

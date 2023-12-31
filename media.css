@@ -1,0 +1,76 @@
+@media (max-width: 1140px) {
+    .photo {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .burger03 {
+        justify-content: center;
+    }
+
+    .burger02 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .common {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .table {
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 912px) {
+
+    ul li a {
+        font-size: 9px;
+    }
+
+    .page8email {
+        margin-left: -120px;
+    }
+
+    .table {
+        gap: 40px;
+    }
+
+    .page09 {
+        padding: 60px;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    .burger03 {
+        margin-left: 40px;
+    }
+
+    .side {
+        margin-left: 160px;
+        margin-top: 80px;
+    }
+
+    .text {
+        margin: 0 auto;
+        margin-left: 160px;
+    }
+
+    .main-div {
+        margin-left: 10px;
+
+    }
+    .page8email {
+        margin-left: -160px;
+    }
+    .table {
+        line-height: 22px;
+    }
+}

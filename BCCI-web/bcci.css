@@ -27,8 +27,11 @@
 }
 .nav2{
     display: flex;
-    line-height: 30px;
-    /* gap: 30px; */
+    line-height: 46px;
+    /* font-size: 20px; */
+}
+.nav2 hr{
+    margin: 10px 0px;
 }
 .Nav2left, ul{
     list-style: none;

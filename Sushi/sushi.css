@@ -4,12 +4,11 @@
     box-sizing: border-box;
     
   }
-  body *{
-    /* overflow: hidden; */
-  }
+ 
   header{
     display: block;
-    background-image: url(../WEBSITE/IMAGE/backgroundimg01.png);
+    background-image: url(../Sushi/image/backgroundimg01.png);
+ 
     width: 100%;
     height: 760px;
   }
@@ -170,11 +169,7 @@
   top: 240%;
   right: 2%;
 }
-/* .shape34{
-  position: absolute;
-  top: 300%;
-  right: -4%;
-} */
+
 .shape35{
   position: absolute;
   top: 310%;
@@ -268,7 +263,7 @@
 /* ...............page-6 css start here .......................... */
 
 .page-6{
-  background-image: url(../WEBSITE/IMAGE/backgroundimg03.png);
+  background-image: url(../Sushi/image/backgroundimg03.png);
   background-repeat: no-repeat;
 }
 .page06{
@@ -352,26 +347,7 @@ button.btn{
   line-height: 30px;
 }
 
-  /*...................... media.............. */
-
-
-  @media(max-width:1200px){
-
-    /* .main-text{
-        font-size: 20;
-    }
-    .row{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .col-50{
-        width: 50%;
-    } */
-    button.btn{
-      top: 58.55%;
-  }
-
-   }
+ 
 
   
 

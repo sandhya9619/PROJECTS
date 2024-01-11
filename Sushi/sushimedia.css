@@ -1,0 +1,17 @@
+ @media(max-width:1200px){
+
+    .main-text{
+        font-size: 20;
+    }
+    .row{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .col-50{
+        width: 50%;
+    } 
+    button.btn{
+      top: 58.55%;
+  }
+
+   }

@@ -6,7 +6,8 @@
 
 header {
     background-size: cover;
-    background: url(../WEBSITE/IMAGE/background01.svg);
+    background: url(../burger-psd/image/background01.svg);
+ 
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -114,8 +115,6 @@ button {
     margin-right: 130px;
 
 }
-
-.photo03 {}
 
 .p-h1 {
     color: #f64b3c;
@@ -226,9 +225,6 @@ button {
     margin-left: 50px;
     justify-content: space-around;
     font-size: 25px;
-    display: flex;
-    justify-content: space-around;
-
 }
 
 .box {
@@ -325,7 +321,7 @@ button {
 }
 
 .page07 {
-    background-image: url(../WEBSITE/IMAGE/groupimage06.png);
+    background-image: url(../burger-psd/image/groupimage06.png);
     opacity: 0.940;
     /* background-color: #f64b3c; */
 }
@@ -378,12 +374,15 @@ button {
     font-size: 25px;
     font-weight: 900px;
 }
-.page8email{
+
+.page8email {
     height: 70%;
     width: 780px;
     margin-left: 60px;
 }
 
+
+/* page-9 css is here..... */
 table {
     margin: 0 auto;
 }
@@ -408,7 +407,6 @@ table td {
 .table-t {
     display: flex;
     justify-content: space-around;
-    /* font-size: 20px; */
 }
 
 .title {

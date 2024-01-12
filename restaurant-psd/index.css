@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin: 20px 79px;
+}
+
+.navleft ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+
+.navleft ul li {
+    list-style: none;
+}
+
+.navright ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.navright ul li {
+    list-style: none;
+}
+
+.navleft,
+.navright {
+    margin: 30px 0px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cont {
+    display: flex;
+}
+.pre{
+    font-size: 25px;
+}
+
+.contleft {
+    width: 50%;
+    margin-top: 81px;
+    margin-left: 70px;
+}
+
+.text {
+    margin: 0 auto;
+
+}
+
+.text h1 {
+    font-size: 62px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding-top: 54px;
+}
+
+.text p {
+    padding-top: 50px;
+}
+
+.text p pre {
+    width: 526px;
+    height: 130px;
+    font-size: 51px;
+    letter-spacing: 0px;
+    line-height: 33px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.btn-read {
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 33px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    border: 3px solid #000000;
+    background-color: #f2cd5d;
+}
+
+.contright {
+    width: 50%;
+
+
+}
+
+/* ...............second page css is here.................... */
+
+.second {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.page01 {
+    text-align: center;
+
+}
+
+.page03 {
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.page02 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page2-text {
+    margin-top: 40px;
+}
+
+
+/* .............third page  css is here......................... */
+
+.thirdpara {
+    display: flex;
+    margin-top: 50px;
+}
+
+.thirdleft {
+    width: 50%;
+}
+
+.thirdright {
+    width: 50%;
+    margin-top: 40px;
+    margin: 0px 50px;
+}
+
+.third-h1 {
+    font-size: 25px;
+    color: #000000;
+    font-family: "Open Sans";
+    margin-top: 80px;
+}
+
+.third-p {
+    margin-top: 60px;
+    font-size: 23px;
+}
+
+
+a {
+    color: black;
+
+}
+
+.Read-story {
+    padding-top: 70px;
+}
+
+
+/* ................four-page css is here .............................*/
+
+.four {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.four-p {
+    margin-top: 40px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 23px;
+
+}
+
+.boxes {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.img01 {
+    height: 329px;
+    width: 1000px;
+}
+
+.box01 {
+    display: flex;
+    height: 390px;
+
+}
+
+.box01-p {
+    margin-top: 20px;
+}
+
+.box01-text {
+    font-size: 15px;
+    text-align: center;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.order-now {
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: #f2cd5d;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    height: 29px;
+    width: 108px;
+}
+
+
+/* ..................five page css start here........................ */
+
+.five {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.five-h1 {
+    font-size: 45px;
+}
+
+.five-p {
+    margin-top: 40px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 23px;
+
+}
+
+.boxes-2 {
+    margin-left: 45px;
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box02 {
+    text-align: center;
+    width: 302px;
+    height: 488px;
+    position: relative;
+
+}
+
+.box02-text {
+    margin-top: 40px;
+}
+
+.orange {
+    position: absolute;
+    top: 257px;
+    right: 98px;
+    height: 43px;
+    background-color: rgb(255, 85, 0);
+    width: 118px;
+}
+
+
+/* ..........................six-page css here............   */
+
+.six {
+    display: flex;
+}
+
+.sixleft {
+    width: 50%;
+}
+
+.sixright {
+    width: 50%;
+    text-align: start;
+    margin-top: 120px;
+    padding-left: 80px;
+}
+
+.six-taxt {
+    font-size: 20px;
+}
+
+
+/* .....................seven page start here........................... */
+
+.seven {
+    display: flex;
+}
+
+.sevenleft {
+    width: 50%;
+    height: 780px;
+}
+
+.seven-h1 {
+    padding-left: 16px;
+    font-size: 47px;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.sevenright {
+    width: 50%;
+    text-align: start;
+    margin-top: 120px;
+    padding-left: 80px;
+}
+
+input {
+    margin: 20px;
+    height: 49px;
+    width: 431px;
+    text-align: start;
+    padding-left: 20px;
+    background-color: rgb(230, 225, 225);
+    border: 1px solid rgb(176, 173, 173);
+
+}
+
+.Message {
+    height: 125px;
+}
+#send-msg {
+    margin-left: 19px;
+    margin-top: 27px;
+}
+
+
+
+/* ...........................footer start here .....................*/
+
+.table-t{
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+    margin: 80px;
+    margin-left: 148px;
+}
+.table{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    line-height: 30px;
+    font-family: "Open Sans";
+    font-weight: 500;
+}
+.footer{
+    background-color: rgb(254, 111, 59);
+}
+.title{
+    margin-top: 30px;
+}

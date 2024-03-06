@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntra in js</title>
+    <!-- <link rel="stylesheet" href="02myntra.js"> -->
+    <!-- css is here -->
+    <style>
+        .card01 {
+            width: 250px;
+            height: 350px;
+        }
+
+        .card01 img {
+            height: 350px;
+            width: 250px;
+        }
+    </style>
+    <!-- JavaScript file  -->
+    <!-- <script src="02myntra.js"></script> -->
+</head>
+
+<body>
+    <div class="container" id="container" >
+        <button onclick="creatediv()"></button>
+        <div class="card01">
+            <!-- <img src="../myntrajs/image/01myntraimg.webp" alt="">
+            <b>Tokyo Tolkies</b>
+            <p>Women Regular Fit Cargos</p>
+            <b>Rs.752</b> -->
+        </div>
+
+    </div>
+
+
+    <script>
+
+        for (let i = 0; i <= 10; i++) {
+            // const element = array[i];
+            
+            function creatediv() {
+                let inpvalue = document.getElementById("container");
+                let node = document.createElement("div");
+                let newdata = ` <div class="card01">${inpvalue.value}
+                    <img src="../myntrajs/image/01myntraimg.webp" alt="">
+                    <b>Tokyo Tolkies</b>
+                    <p>Women Regular Fit Cargos</p>
+                    <b>Rs.752</b>
+                    </div>`
+                    
+                    let textnode = document.createTextNode(newdata);
+                    node.appendChild(textnode);
+                    document.getElementById("card01").appendChild(node);
+                    node.innerHTML=newdata
+                    textnode.appendChild(newdata)
+                }
+                
+            }
+
+
+    </script>
+</body>
+
+</html>

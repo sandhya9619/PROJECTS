@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Process</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid rgb(225, 219, 219);
+        }
+
+        .logo img {
+            width: 60px;
+        }
+
+        .nav-container ul {
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        .nav-container ul li {
+            font-size: 15px;
+            padding: 0 25px;
+            list-style: none;
+        }
+
+        .dashed {
+            width: 10%;
+            height: 4px;
+            border-top: 1px dashed black;
+            margin-top: 8px;
+        }
+
+        .bag {
+            color: rgb(3, 196, 3);
+            border-bottom: 2ps solid green;
+        }
+
+        .right-nav {
+            display: flex;
+            /* text-align: center; */
+            /* margin: 0 auto; */
+        }
+
+        .right-nav img {
+            width: 45px;
+        }
+
+        .text {
+            /* text-align: center; */
+            margin-top: 15px;
+        }
+
+        .fpage-left {
+            width: 60%;
+        }
+
+        .fpage-right {
+            width: 40%;
+        }
+
+        .fpage {
+            display: flex;
+            /* border: 1px solid black; */
+            height: 600px;
+
+        }
+
+        .fpage-left {
+            margin-top: 20px;
+            /* border-bottom: #dd573c; */
+            /* border: 1px solid black; */
+            margin-left: 60px;
+            /* height: 200px; */
+            /* box-sizing: border-box; */
+            /* flex-grow: inherit; */
+        }
+
+        .fpage-left-container {
+            background-color: #fff6f4;
+            height: 70px;
+            border-radius: 5px;
+            border: 1px solid rgb(212, 208, 208);
+
+
+        }
+
+        .deleverbox {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            margin: 0 15px;
+        }
+
+        .pin-code {
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: #fff6f4;
+
+            height: 35px;
+            width: 168px;
+        }
+
+        .availablebox {
+            border-radius: 5px;
+            font-size: 15px;
+            margin-top: 20px;
+            border: 1px solid rgb(212, 208, 208);
+
+        }
+
+        .availablebox b {
+            padding-left: 25px;
+        }
+
+        .availablebox ul li {
+            color: gray;
+        }
+
+        .show {
+            color: red;
+        }
+
+        .selectedbox {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            margin: 20px;
+
+        }
+
+        .remove {
+            display: flex;
+            font-size: 15px;
+            /* text-align: center; */
+            /* margin-top: 5px; */
+            /* padding: 5px; */
+            gap: 10px;
+        }
+
+        .remove hr {
+            height: 30px;
+            padding-top: 5px;
+
+        }
+
+        .select-img IMG {
+            height: 226px;
+        }
+
+        .select-box {
+            display: flex;
+            border: 1px solid rgb(212, 208, 208);
+            border-radius: 5px;
+            /* margin: 10px; */
+            padding: 10px;
+        }
+
+        .select-text {
+            padding-left: 10px;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .qlt {
+            background-color: rgb(224, 221, 221);
+            color: black;
+            width: 70px;
+            height: 20px;
+            border-radius: 2px;
+            padding: 2px;
+
+        }
+
+        .size {
+            background-color: rgb(224, 221, 221);
+            color: black;
+            width: 60px;
+            height: 20px;
+            border-radius: 2px;
+            padding: 2px;
+            text-align: center;
+
+
+
+        }
+
+
+        .div-size {
+            display: flex;
+            padding: 0px 10px;
+            justify-content: space-between;
+            gap: -16;
+            width: 155px;
+            text-align: center;
+
+        }
+
+        .add-list {
+            border: 1px solid rgb(212, 208, 208);
+            height: 50px;
+            width: 700px;
+            padding-top: 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        .apply {
+            display: flex;
+            margin: 20px;
+            justify-content: space-between;
+        }
+
+        .apply-btn {
+            margin-top: 20px;
+            width: 120px;
+            height: 30px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: #fff6f4;
+        }
+
+        hr {
+            width: 90%;
+            background-color: #fff6f4;
+        }
+
+        .newarea {
+            display: flex;
+            justify-content: start;
+            text-align: center;
+            /* height: 20px; */
+            /* border: 1px solid black; */
+            padding: 0 20px;
+        }
+
+        .newicon {
+            margin-top: 15px;
+            padding: 0 15px;
+        }
+
+        .left-p {
+            padding-left: 18px;
+        }
+
+        .prices {
+            display: flex;
+            justify-content: space-around;
+            width: 260px;
+            /* margin-left: 10px; */
+            /* margin-top: 10px; */
+            margin: 10px 10px;
+
+        }
+
+        .ten {
+            border: 1.5px solid rgb(220, 210, 210);
+            width: 60px;
+            height: 30px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .hundred {
+            border: 1.5px solid rgb(250, 74, 74);
+            width: 90px;
+            height: 30px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .line-p {
+            padding-left: 15px;
+        }
+
+        .email-inp {
+            margin-left: 15px;
+            width: 340px;
+            height: 30px;
+            padding: 3px 10px;
+        }
+
+        .know-more {
+            color: red;
+            margin: 15px;
+            font-weight: 550;
+            /* padding-top: 10px; */
+        }
+
+        th {
+            text-align: start;
+            font-size: 15px;
+            color: rgb(46, 44, 44);
+            padding-top: 7px;
+        }
+
+        td {
+            text-align: end;
+        }
+
+        .form {
+            margin: 30px 15px;
+            padding-top: 20px;
+        }
+
+        caption {
+            text-align: start;
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+
+        .knowmore {
+            color: red;
+
+        }
+
+        .free-shipping {
+            padding-left: 18px;
+        }
+
+        .total-amount {
+            padding-left: 18px;
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+        }
+
+        .place-order {
+            background-color: rgb(255, 63, 108);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-left: 18px;
+            text-align: center;
+            height: 40px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            width: 370px;
+        }
+        table{
+            width: 370px;
+        }
+        .free-free{
+            color: rgb(8, 188, 8);
+            /* display: flex; */
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../new-project/image/LOGOIMG.webp" alt="">
+            </div>
+            <ul>
+                <li class="bag"><u>BAG</u></li>
+                <li class="dashed"></li>
+                <li>ADDRESS</li>
+                <li class="dashed"></li>
+                <li>PAYMENT</li>
+            </ul>
+            <div class="right-nav">
+                <div class="img">
+                    <img src="../new-project/image/img2.png" alt="">
+                </div>
+                <div class="text">
+                    100% SECURE
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fpage">
+        <div class="fpage-left">
+            <div class="fpage-left-container">
+                <div class="deleverbox">
+                    <div class="deleverbox-text">
+                        Check delevery time & services
+                    </div>
+                    <button class="pin-code">ENTER PIN CODE</button>
+                </div>
+
+                <div class="availablebox">
+                    <b>Available Offers</b>
+                    <ul>
+                        <li>10% Instant Discount on ICICI Bank Credit and Debit Cards on a min spend of ₹3,500. TCA</li>
+                    </ul>
+                    <b class="show">Show More</b>
+
+
+                </div>
+
+                <div class="selectedbox">
+                    <div class="item">
+                        <i class="fa-solid fa-square-check" style="color: #de1717;"></i>
+                        <b>1/1 ITEMS SELECTED</b>
+                    </div>
+                    <div class="remove">
+                        REMOVE -
+                        <!-- <hr> -->
+                        MOVE TO LIST
+                    </div>
+
+                </div>
+                <div class="select-box">
+                    <div class="select-img">
+                        <img src="../new-project/image/img3.webp" alt="">
+                    </div>
+                    <div class="select-text">
+                        <h4><b>SASSAFRAS</b></h4>
+                        <P>Women Black Solid Corduroy Cropped Bomber Jacket</P>
+                        <p class="grey">Sold: ARDENT retail co. </p>
+                        <div class="div-size">
+                            <div class="size">Size:M</div>
+                            <div class="qlt">Qlt:1</div>
+                        </div>
+                        $679
+                        <p>7 days return available</p>
+                    </div>
+
+                </div>
+                <div class="add-list">
+                    Add more from wishlist &rarr;
+                </div>
+            </div>
+        </div>
+        <div class="fpage-right">
+
+
+
+            <div class="apply">
+                <p>Apply coupons</p>
+
+                <button class="apply-btn">APPLY</button>
+
+            </div>
+            <hr>
+            <p class="left-p">SUPPORT TRANSFORMATIVE SOCIAL WORK IN INDIA</p>
+            <div class="newarea">
+                <div class="newicon">
+                    <i class="fa-solid fa-square-check" style="color: #de1717;"></i>
+                </div>
+                <div class="newtext">
+                    <p><b>Donate and make a difference</b></p>
+                </div>
+            </div>
+
+            <div class="prices">
+                <div class="ten">$10</div>
+                <div class="ten">$50</div>
+                <div class="hundred">$100</div>
+            </div>
+            <p class="line-p">We will send donation reciept on the provided email id</p>
+            <input type="text" placeholder="Enter your email" class="email-inp">
+            <br>
+            <br>
+            <span class="know-more">Know more</span>
+            <br>
+            <hr>
+
+            <form action="" class="form">
+                <table align="">
+
+                    <caption>PRICE DETAILS (2 ITEMS) </caption>
+                    <tr>
+                        <th>TotalMRP</th>
+                        <td>₹3899</td>
+                    </tr>
+                    <tr>
+                        <th>Discount on MRP</th>
+                        <td class="free-free">-₹2,220</td>
+                    </tr>
+                    <tr>
+                        <th>Coupon Discount</th>
+                        <td class="knowmore">Apply Coupon</td>
+                    </tr>
+
+                    <tr>
+                        <th>Social Work Donation</th>
+                        <td>₹10</td>
+                    </tr>
+
+                    <tr>
+                        <th> Platform Fee <span class="knowmore">Know More</span></th>
+                        <td class="free-free">FREE</td>
+                    </tr>
+                    <tr>
+                        <th> Shipping FEE <span class="knowmore">Know More</span></th>
+                        <td class="free-free"> FREE</td>
+                    </tr>
+
+
+
+
+
+                </table>
+            </form>
+
+            <p class="free-shipping"> Free shipping for you</p>
+            <hr>
+            <div class="total-amount">
+                <p><b>Total Amount</b></p>
+                <p><b>₹1,588</b></p>
+            </div>
+
+            <button class="place-order">PLACE ORDER</button>
+        </div>
+    </div>
+</body>
+
+</html>

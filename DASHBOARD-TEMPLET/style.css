@@ -1,0 +1,703 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 1px solid black;
+            display: flex;
+            width: 100%;
+        }
+
+        .Lcontainer {
+            width: 22%;
+            background-color: whitesmoke;
+            border: 1px dashed rgb(194, 190, 190);
+        }
+
+        .Rcontainer {
+            width: 78%;
+            background-color: whitesmoke;
+        }
+
+        .logo {
+            margin: 20px;
+            width: 120px;
+            height: 100px;
+        }
+
+        .logo img {
+            margin-top: 10px;
+        }
+
+        sup {
+            color: rgb(3, 156, 3);
+            background-color: rgb(212, 245, 212);
+            padding: 3px 7px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .administer {
+            display: flex;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            margin: 10px;
+            border: 1px solid rgb(187, 184, 184);
+            padding: 10px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .avtar2 img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .text {
+            font-family: sans-serif;
+        }
+
+        .h4-nav {
+            margin: 20px 40px;
+        }
+
+        .dashboard {
+            background-color: rgb(229, 235, 249);
+            display: flex;
+            padding: 15px;
+            justify-content: space-between;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .two {
+            background-color: rgb(121, 121, 248);
+            color: white;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .dash-text {
+            color: rgb(121, 121, 248);
+        }
+
+        .myul {
+            margin: 20px;
+            padding-left: 25px;
+        }
+
+        .myul01 {
+            display: none;
+        }
+
+        .myul01 li {
+            padding: 10px;
+        }
+
+        .myul01 li a {
+            text-decoration: none;
+            color: rgb(79, 77, 77);
+            font-weight: 600;
+        }
+        .layouts {
+            display: flex;
+            padding: 15px;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .layout-text {
+            color: rgb(131, 126, 126);
+        }
+
+        .myul_list {
+            margin: 20px;
+            padding-left: 25px;
+        }
+
+        .myul01_list {
+            display: none;
+        }
+
+        .myul01_list li {
+            padding: 10px;
+        }
+
+        .myul01_list li a {
+            text-decoration: none;
+            color: rgb(79, 77, 77);
+            font-weight: 600;
+        }
+
+        .h4-widget {
+            margin: 20px 40px;
+        }
+
+        .static {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .rnav {
+            display: flex;
+            align-items: center;
+        }
+
+        .lnav {
+            padding: 10px;
+        }
+
+        .rnav img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-left: auto;
+        }
+
+        .rnav {
+            display: flex;
+            padding: 0px 30px;
+            gap: 15px;
+            align-items: center;
+
+        }
+
+        .rnav i,
+        .lnav i {
+            height: 50px;
+            width: 30px;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        .avatar {
+            margin-left: auto;
+        }
+
+        .menu {
+            margin: 10px;
+            margin-top: 20px;
+            margin-left: 30px;
+            font-size: 13px;
+            font-family: sans-serif;
+            color: rgb(131, 130, 130);
+        }
+
+        .home {
+            margin: 10px;
+            margin-top: 20px;
+            margin-left: 30px;
+            font-family: sans-serif;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 30px;
+        }
+
+        .box01,
+        .box02,
+        .box03,
+        .box04 {
+            height: 214px;
+            width: 430px;
+            margin: 10px;
+            border: 1px solid rgb(220, 217, 217);
+            border-radius: 10px;
+            background-color: white;
+        }
+        .div01 {
+            display: flex;
+            margin: 20px;
+            justify-content: start;
+            gap: 20px;
+        }
+        .div_icon01 {
+            background-color: rgb(223, 230, 250);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding-top: 8px;
+            border-radius: 10px;
+        }
+        .div_icon02 {
+            background-color: rgb(248, 231, 226);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 10px;
+        }
+        .div_icon03 {
+            background-color: rgb(226, 249, 226);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 10px;
+        }
+        .div_icon04 {
+            background-color: rgb(250, 223, 223);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 10px;
+        }
+        .div_text {
+            padding-top: 7px;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+        .div02 {
+            background-color: rgb(245, 245, 245);
+            height: 105px;
+            width: 379px;
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+        }
+        .graph_text {
+            margin: 0 auto;
+            padding: 10px;
+            padding-top: 40px;
+            padding-right: 40px;
+        }
+        .color {
+            color: blue;
+        }
+        .orange {
+            color: orange;
+        }
+        .green {
+            color: green;
+        }
+        .red {
+            color: red;
+        }
+        .revenue {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+        .R_revenue {
+            background-color: white;
+            border-radius: 15px;
+            width: 660px;
+            height: 550px;
+            border: 1px solid rgb(185, 181, 181);
+        }
+        .L_revenue {
+            background-color: white;
+            border-radius: 15px;
+            width: 220px;
+            height: 380px;
+            border: 1px solid rgb(185, 181, 181);
+        }
+        .p_monthly {
+            margin: 20px;
+        }
+        .p_project {
+            margin: 20px;
+
+        }
+        .graph img {
+            height: 110px;
+            width: 200px;
+            padding: 10px;
+        }
+        .monthly_graph img {
+            height: 480px;
+            width: 650px;
+        }
+        .release {
+            margin: 20px;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+            color: rgb(86, 85, 85);
+        }
+        .myul {
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .fill_div {
+            width: 170px;
+            border-radius: 10px;
+            height: 8px;
+            background-color: rgb(194, 213, 249);
+            margin: 20px;
+        }
+        .half_div {
+            width: 120px;
+            border-radius: 10px;
+            height: 8px;
+            background-color: rgb(54, 124, 254);
+        }
+        .o_range {
+            color: orange;
+        }
+        span {
+            color: white;
+        }
+        .t_ext {
+            color: black;
+        }
+        .g_reen {
+            color: green;
+        }
+        .add-task {
+            height: 44px;
+            width: 148px;
+            font-size: 15px;
+            margin-left: 20px;
+            border-radius: 23px;
+            background-color: rgb(54, 124, 254);
+            border: none;
+            color: white;
+            font-family: sans-serif;
+        }
+        .project_overview {
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+        .r_project {
+            background-color: white;
+            border-radius: 15px;
+            width: 660px;
+            height: 200px;
+            border: 1px solid rgb(185, 181, 181);
+        }
+        .l_project {
+            margin-right: 20px;
+            background-color: white;
+            border-radius: 15px;
+            width: 220px;
+            height: 170px;
+            border: 1px solid rgb(185, 181, 181);
+        }
+        .two_span {
+            background-color: rgb(233, 226, 226);
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: grey;
+        }
+        .project_overview {
+            font-weight: 600;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .Total_task {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .Total_task02 img {
+            height: 90px;
+            width: 100px;
+        }
+        .Total_task03 {
+            padding: 10px;
+        }
+        .Total_task04 img {
+            height: 90px;
+            width: 100px;
+        }
+        .add_projects {
+            height: 40px;
+            width: 150px;
+            font-size: 15px;
+            margin-left: 20px;
+            border-radius: 23px;
+            background-color: rgb(54, 124, 254);
+            border: none;
+            color: white;
+            font-family: sans-serif;
+        }
+        .fonts {
+            font-size: 15px;
+            font-family: sans-serif;
+            color: rgb(115, 114, 114);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .l_container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            margin-top: 30px;
+            align-items: center;
+        }
+        .svg {
+            color: rgb(95, 95, 248);
+            text-align: center;
+            padding-top: 6px;
+            height: 35px;
+            width: 36px;
+            border-radius: 10px;
+            background-color: rgb(233, 233, 251);
+        }
+        .l_text {
+            font-size: 13px;
+        }
+        .mail {
+            color: grey;
+            font-size: 13px;
+        }
+        .l_container02 {
+            display: flex;
+            margin-left: 30px;
+            margin-top: 30px;
+            align-items: center;
+        }
+        .l_container02 img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .avtar01 {
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            padding-top: 9px;
+            margin-left: -17px;
+            font-size: 15px;
+            color: rgb(60, 60, 249);
+            background-color: rgb(217, 217, 252);
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .avtar-1 {
+            margin-left: -15px;
+        }
+
+        .avtar-1:hover {
+            z-index: 5;
+        }
+
+        .plus {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            padding-top: 8px;
+            font-size: 25px;
+            color: white;
+            background-color: rgb(54, 124, 254);
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .transaction_container {
+            margin: 10px 23px;
+            display: flex;
+        }
+        .transaction {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            height: 610px;
+            width: 460px;
+            border: 1px solid rgb(221, 219, 219);
+
+        }
+
+        .Total_income {
+            margin: 10px;
+            background-color: white;
+
+            border-radius: 10px;
+
+            height: 328px;
+            width: 470px;
+            border: 1px solid rgb(221, 219, 219);
+        }
+
+        .transaction01 {
+            display: flex;
+            padding: 35px;
+            justify-content: space-between;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 540;
+        }
+
+        .transaction02 {
+            display: flex;
+            gap: 20px;
+
+            font-family: sans-serif;
+        }
+
+        .all_transaction,
+        .success,
+        .pending {
+            padding: 10px 30px;
+
+        }
+
+        .all_transaction:hover {
+            color: blue;
+        }
+
+        .success:hover {
+            color: blue;
+        }
+
+        .pending:hover {
+            color: blue;
+        }
+
+        .ul_div01 {
+            display: flex;
+            /* border: 1px solid red; */
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .ul_icon {
+            height: 35px;
+            width: 40px;
+            border: 1px solid rgb(225, 222, 222);
+            /* align-items: center; */
+            text-align: center;
+            padding-top: 8px;
+            font-size: 15px;
+            font-family: sans-serif;
+            border-radius: 10px;
+        }
+
+        .apple_ink {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .p_textbold {
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        .p_text {
+            color: grey;
+            font-size: 13px;
+        }
+        .p_numbold {
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .p_num {
+            color: red;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        #p_numid {
+            color: green;
+        }
+        #p_num_orange {
+            color: orange;
+        }
+        .myul_div li {
+            list-style: none;
+        }
+        #ul_icon {
+            color: rgb(54, 124, 254);
+            background-color: rgb(222, 222, 246);
+        }
+        #ul_iconid {
+            color: orange;
+            background-color: rgb(249, 240, 223);
+        }
+        #successid {
+            display: none;
+        }
+        #pendingid {
+            display: none;
+        }
+        .btns {
+            display: flex;
+            padding: 25px;
+            gap: 15px;
+        }
+        .view_all {
+            height: 40px;
+            font-family: sans-serif;
+            width: 189px;
+            border-radius: 20px;
+            background-color: white;
+            font-weight: 550;
+            color: grey;
+            border: 1px solid rgb(219, 217, 217);
+        }
+        .view_all:hover {
+            color: white;
+            background-color: rgb(99, 98, 98);
+        }
+        .create_new {
+            height: 40px;
+            font-family: sans-serif;
+            width: 189px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            font-weight: 550;
+            background-color: rgb(54, 124, 254);
+        }
+        .create_new:hover {
+            background-color: rgb(12, 94, 247);
+        }
+        .total_graph img{
+            height: 290px;
+            width: 380px;
+            margin-left: 20px;
+        }
+        .main_box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .income_box{
+            margin: 10px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            height: 90px;
+            width: 205px;
+        }
+        .ul_income {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        .income_p{
+            padding: 0px 30px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .income_span{
+            color: grey;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        .color_style{
+            color: black;
+        }

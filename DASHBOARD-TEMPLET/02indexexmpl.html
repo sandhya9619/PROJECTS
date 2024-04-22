@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-templet</title>
+    <!-- css link is here..... -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome cdn link is here  -->
+    <script src="./Attractive Chart Example_files/chart.umd.min.js.download"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="Lcontainer">
+            <div class="logo">
+                <img src="../DASHBOARD-TEMPLET/IMAGE/logo-dark.svg" alt="">
+                <span><sup class="sup1">v9.0</sup></span>
+            </div>
+            <div class="administer">
+                <div class="avtar2"><img src="../DASHBOARD-TEMPLET/IMAGE/avatar-2.jpg" alt=""></div>
+                <div class="text">
+                    <h4><b>John smith</b></h4>
+                    <p>Administrator</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-bars" style="color: #a5a6a7;"></i>
+                </div>
+            </div>
+            <div class="text-2">
+                <h4 class="h4-nav">navigation</h4>
+            </div>
+            <div class="dashboard" onclick="dash()">
+                <div class="icon-dash">
+                    <i class="fa-solid fa-chart-line" style="color: #538aea;"></i>
+                </div>
+                <div class="dash-text">
+                    <h4><b>Dashboard</b></h4>
+                </div>
+                <div class="dash-icon">
+                    <div class="two">2</div>
+                </div>
+            </div>
+            <div class="myul">
+                <ul class="myul01">
+                    <li><a href="">Default</a></li>
+                    <li><a href="">Analytics</a></li>
+                </ul>
+            </div>
+
+            <div class="layouts" onclick="layout()">
+                <div class="icon-layout">
+                    <i class="fa-solid fa-file" style="color: #797c81;"></i>
+                </div>
+                <div class="layout-text">
+                    <h4><b>Layouts</b></h4>
+                </div>
+                <div class="layout-icon" style=" color: white; transform: rotate(270deg);overflow: hidden;">
+                    <i class="fa-solid fa-circle-chevron-down "
+                        style="background: black;border: none; border-radius: 50%;"></i>
+                </div>
+            </div>
+
+            <div class="myul_list">
+                <ul class="myul01_list">
+                    <li><a href="">Vertical</a></li>
+                    <li><a href="">Horizontal</a></li>
+                    <li><a href="">Layout 2</a></li>
+                    <li><a href="">Compact</a></li>
+                    <li><a href="">Tab</a></li>
+                </ul>
+            </div>
+
+            <div class="widget-2">
+                <h4 class="h4-widget">Widget</h4>
+            </div>
+            <div class="static">
+                <div class="rstatic">
+                    <i class="fa-solid fa-chart-line" style="color: #538aea;"></i>
+
+                </div>
+                <div class="lstatic">
+                    <h4 class="h4-static">Statics</h4>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- </div> -->
+
+        <div class="Rcontainer">
+            <div class="nav">
+                <div class="lnav">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="rnav">
+                    <i class="fa-solid fa-sun" style="color: #6e6e6e;"></i>
+                    <i class="fa-solid fa-gear" style="color: #6e6e6e;"></i>
+                    <i class="fa-solid fa-bolt" style="color: #6e6e6e;"></i>
+                    <i class="fa-solid fa-bell" style="color: #808080;"></i>
+                    <img src="../DASHBOARD-TEMPLET/IMAGE/avatar-1.jpg" alt="" class="avtar">
+                </div>
+            </div>
+
+            <div class="menu">
+                <h3>Home &gt; Dashboard &gt; Home</h3>
+            </div>
+            <div class="home">
+                <h1>Home</h1>
+            </div>
+            <div class="box">
+                <div class="box01">
+                    <div class="div01">
+                        <div class="div_icon01">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M13 9H7" stroke="#4680FF" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M22.0002 10.9702V13.0302C22.0002 13.5802 21.5602 14.0302 21.0002 14.0502H19.0402C17.9602 14.0502 16.9702 13.2602 16.8802 12.1802C16.8202 11.5502 17.0602 10.9602 17.4802 10.5502C17.8502 10.1702 18.3602 9.9502 18.9202 9.9502H21.0002C21.5602 9.9702 22.0002 10.4202 22.0002 10.9702Z"
+                                    stroke="#4680FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M17.48 10.55C17.06 10.96 16.82 11.55 16.88 12.18C16.97 13.26 17.96 14.05 19.04 14.05H21V15.5C21 18.5 19 20.5 16 20.5H7C4 20.5 2 18.5 2 15.5V8.5C2 5.78 3.64 3.88 6.19 3.56C6.45 3.52 6.72 3.5 7 3.5H16C16.26 3.5 16.51 3.50999 16.75 3.54999C19.33 3.84999 21 5.76 21 8.5V9.95001H18.92C18.36 9.95001 17.85 10.17 17.48 10.55Z"
+                                    stroke="#4680FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="div_text">
+                            <p>All Earnings</p>
+                        </div>
+                    </div>
+                    <div class="div02">
+
+                        <div class="graph">
+                
+                            <img src="../DASHBOARD-TEMPLET/IMAGE/Screenshot05.png" alt="">
+
+                        </div>
+                        <div class="graph_text">
+                            <p><b>$3,020</b></p>
+                            <p class="color"><b><i class="fa-solid fa-arrow-right"
+                                        style="transform: rotate(310deg);"></i> 30.6%</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box02">
+
+
+                    <div class="div01">
+                        <div class="div_icon02">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z"
+                                    stroke="#E58A00" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path opacity="0.6" d="M14.5 4.5V6.5C14.5 7.6 15.4 8.5 16.5 8.5H18.5" stroke="#E58A00"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path opacity="0.6" d="M8 13H12" stroke="#E58A00" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path opacity="0.6" d="M8 17H16" stroke="#E58A00" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="div_text">
+                            <p>Page views</p>
+                        </div>
+                    </div>
+                    <div class="div02">
+                        <div class="graph">
+                       
+                            <img src="../DASHBOARD-TEMPLET/IMAGE/Screenshot06.png" alt="">
+
+                        </div>
+                        <div class="graph_text">
+                            <p><b>290K+</b></p>
+                            <p class="orange"><b> <i class="fa-solid fa-arrow-right"
+                                        style="transform: rotate(310deg);"></i> 30.6%</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box03">
+
+                    <div class="div01">
+                        <div class="div_icon03">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2V5" stroke="#2ca87f" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 2V5" stroke="#2ca87f" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M3.5 9.08984H20.5" stroke="#2ca87f" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                                    stroke="#2ca87f" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M15.6947 13.7002H15.7037" stroke="#2ca87f" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M15.6947 16.7002H15.7037" stroke="#2ca87f" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M11.9955 13.7002H12.0045" stroke="#2ca87f" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M11.9955 16.7002H12.0045" stroke="#2ca87f" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M8.29431 13.7002H8.30329" stroke="#2ca87f" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M8.29395 16.7002H8.30293" stroke="#2ca87f" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="div_text">
+                            <p>Total Price</p>
+                        </div>
+                    </div>
+                    <div class="div02">
+                        <div class="graph">
+                            
+                            <img src="../DASHBOARD-TEMPLET/IMAGE/Screenshot07.png" alt="">
+                        </div>
+                        <div class="graph_text">
+                            <p><b>839</b></p>
+                            <p class="green"><b> <i class="fa-solid fa-arrow-right"
+                                        style="transform: rotate(310deg);"></i> New</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box04">
+
+                    <div class="div01">
+                        <div class="div_icon04">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke="#DC2626" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path opacity="0.4" d="M8.4707 10.7402L12.0007 14.2602L15.5307 10.7402" stroke="#DC2626"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="div_text">
+                            <p>Download </p>
+                        </div>
+                    </div>
+                    <div class="div02">
+                        <div class="graph">
+                            <img src="../DASHBOARD-TEMPLET/IMAGE/Screenshot08.png" alt="">
+                        </div>
+                        <div class="graph_text">
+                            <p><b>2,067</b></p>
+                            <p class="red"><b> <i class="fa-solid fa-arrow-right"
+                                        style="transform: rotate(310deg);"></i> 30.6%</b> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="revenue">
+                <div class="R_revenue">
+                    <div class="monthly_revenue">
+                        <p class="p_monthly"><b>Monthly Revenue</b></p>
+                        <hr>
+                    </div>
+                    <div class="monthly_graph">
+                        <img src="../DASHBOARD-TEMPLET/IMAGE/Screenshot02.png" alt="">
+                    </div>
+                </div>
+                <div class="L_revenue">
+                    <div class="project">
+                        <p class="p_project"><b>Project - Able Pro</b></p>
+                        <hr>
+                    </div>
+                    <div class="release">
+                        <p>Release v1.2.0 <span>__</span>70% </p>
+                    </div>
+                    <div class="fill_div">
+                        <div class="half_div"></div>
+                    </div>
+                    <div class="myul">
+                        <ul>
+                            <li class="o_range">
+                                <p class="t_ext">Horizontal... <span class="two_span">2</span></p>
+                            </li>
+                            <br>
+                            <li class="o_range">
+                                <p class="t_ext">Invoice gane...</p>
+                            </li>
+                            <br>
+                            <li class="o_range">
+                                <p class="t_ext">Package up...</p>
+                            </li>
+                            <br>
+                            <li class="g_reen">
+                                <p class="t_ext">Figma auto...</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="add-task">+Add task</button>
+                </div>
+            </div>
+
+            <div class="project_overview">
+                <div class="r_project">
+                    <div class="project_overview">
+                        <p>Project overview</p>
+                    </div>
+                    <div class="Total_task">
+                        <div class="Total_task01">
+                            <p class="fonts">Total Tasks</p>
+                            <p><b>34,686</b></p>
+                        </div>
+                        <div class="Total_task02">
+                            <img src="../DASHBOARD-TEMPLET/IMAGE/Screenshot03.png" alt="">
+                        </div>
+                        <div class="Total_task03">
+                            <p class="fonts">Pending <br>Tasks</p>
+                            <p><b>3,786</b></p>
+                        </div>
+                        <div class="Total_task04">
+                            <img src="../DASHBOARD-TEMPLET/IMAGE/Screenshot04.png" alt="">
+                        </div>
+                        <div class="Total_task05">
+                            <button class="add_projects">+ Add projects</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="l_project">
+                    <div class="l_container">
+                        <div class="svg">@</div>
+                        <div class="l_text">
+                            <p>Able pro</p>
+                            <p class="mail">@ableprodvloper</p>
+                        </div>
+                        <div class="l_icon01">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="l_container02">
+                        <img src="../DASHBOARD-TEMPLET/IMAGE/avatar-1.jpg" class="avtar-1" alt="">
+                        <img src="../DASHBOARD-TEMPLET/IMAGE/avatar-3.jpg" class="avtar-1" alt="">
+                        <img src="../DASHBOARD-TEMPLET/IMAGE/avatar-4.jpg" class="avtar-1" alt="">
+                        <img src="../DASHBOARD-TEMPLET/IMAGE/avatar-5.jpg" class="avtar-1" alt="">
+                        <span class="avtar01">+2</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="transaction_container">
+                <div class="transaction">
+                    <div class="transaction01">
+                        <p>Transaction</p>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="transaction02">
+                        <div class="all_transaction" onclick="all_transaction()">All Transaction</div>
+                        <div class="success" onclick="success()">Success</div>
+                        <div class="pending" onclick="pending()">Pending</div>
+                    </div>
+                    <!-- <br> -->
+                    <hr>
+                    <ul class="myul_div" id="tranjactionid">
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    AI
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Apple Inc</b></p>
+                                        <p class="p_text">#ABLE-PRO-T00232</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>$210,000 </b></p>
+                                        <p class="p_num"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(130deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    SM
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Spotify Music </b></p>
+                                        <p class="p_text">#ABLE-PRO-T10232</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>-10,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>30.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon" id="ul_icon">
+                                    MD
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Medium </b></p>
+                                        <p class="p_text">06:30 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>-26 </b></p>
+                                        <p class="p_num" id="p_num_orange"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(130deg);"></i>5%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    U
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Uber</b></p>
+                                        <p class="p_text">08:40 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>+210,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon" id="ul_iconid">
+                                    OC
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Ola Cabs</b></p>
+                                        <p class="p_text">07:40 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>+210,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+                    </ul>
+                    <ul class="myul_div" id="successid">
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    U
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Uber</b></p>
+                                        <p class="p_text">08:40 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>+210,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <hr>
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon" id="ul_iconid">
+                                    OC
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Ola Cabs</b></p>
+                                        <p class="p_text">07:40 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>+210,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    AI
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Apple Inc</b></p>
+                                        <p class="p_text">#ABLE-PRO-T00232</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>$210,000 </b></p>
+                                        <p class="p_num"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(130deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+
+
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    SM
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Spotify Music </b></p>
+                                        <p class="p_text">#ABLE-PRO-T10232</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>-10,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>30.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon" id="ul_icon">
+                                    MD
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Medium </b></p>
+                                        <p class="p_text">06:30 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>-26 </b></p>
+                                        <p class="p_num" id="p_num_orange"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(130deg);"></i>5%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+
+                    </ul>
+                    <ul class="myul_div" id="pendingid">
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    SM
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Spotify Music </b></p>
+                                        <p class="p_text">#ABLE-PRO-T10232</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>-10,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>30.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon" id="ul_icon">
+                                    MD
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Medium </b></p>
+                                        <p class="p_text">06:30 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>-26 </b></p>
+                                        <p class="p_num" id="p_num_orange"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(130deg);"></i>5%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    U
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Uber</b></p>
+                                        <p class="p_text">08:40 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>+210,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon">
+                                    AI
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Apple Inc</b></p>
+                                        <p class="p_text">#ABLE-PRO-T00232</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>$210,000 </b></p>
+                                        <p class="p_num"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(130deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="ul_div01">
+                                <div class="ul_icon" id="ul_iconid">
+                                    OC
+                                </div>
+                                <div class="apple_ink">
+                                    <div class="apple_text">
+                                        <p class="p_textbold"><b>Ola Cabs</b></p>
+                                        <p class="p_text">07:40 PM</p>
+                                    </div>
+                                    <div class="apple_number">
+                                        <p class="p_numbold"><b>+210,000 </b></p>
+                                        <p class="p_num" id="p_numid"> <i class="fa-solid fa-arrow-right"
+                                                style="transform: rotate(310deg);"></i>10.6%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <hr>
+
+
+
+
+
+
+
+                    </ul>
+                    <hr>
+                    <div class="btns">
+                        <button class="view_all">View All Transaction...</button>
+                        <button class="create_new">Create New Transaction..</button>
+                    </div>
+                </div>
+                <div class="transaction">
+                    <div class="transaction01">
+                        <p>Total income</p>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="total_graph">
+                        <img src="../DASHBOARD-TEMPLET/IMAGE/scrnshort01.png" alt="">
+                    </div>
+                    <div class="main_box">
+                        <div class="income_box">
+                            <ul class="ul_income"><li style="color: blue;"><p class="color_style" >Income</p></li></ul>
+                            <p class="income_p">$23,876 <span class="income_span">+$763,43</span></p>
+                        </div>
+                        <div class="income_box">
+                            <ul class="ul_income"><li style="color: orange;"><p class="color_style" >Rent</p></li></ul>
+                            <p class="income_p">$23,876 <span class="income_span">+$763,43</span></p>
+                        </div>
+                        <div class="income_box">
+                            <ul class="ul_income"><li style="color: green;"><p class="color_style" >Download</p></li></ul>
+                            <p class="income_p">$23,876 <span class="income_span">+$763,43</span></p>
+                        </div>
+                        <div class="income_box">
+                            <ul class="ul_income"><li style="color: rgb(226, 226, 245);"><p class="color_style" >Views</p></li></ul>
+                            <p class="income_p">$23,876 <span class="income_span">+$763,43</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function dash() {
+                let myul = document.querySelector(".myul01");
+                myul.style.display = "block"
+
+            }
+            function layout() {
+                let myul_list = document.querySelector(".myul01_list");
+                myul_list.style.display = "block"
+            }
+            function success() {
+                let success = document.getElementById("successid");
+                let tranjaction = document.getElementById("tranjactionid");
+                let pending = document.getElementById("pendingid");
+                let success01 = document.querySelector(".success");
+                let pending01 = document.querySelector(".pending");
+                let transaction01 = document.querySelector(".all_transaction")
+
+                success.style.display = "block";
+                tranjaction.style.display = "none";
+                pending.style.display = "none";
+                success01.style.color = "blue"
+                success01.style.borderBottom = "2px solid blue"
+                transaction01.style.borderBottom = "none"
+                pending01.style.borderBottom = "none"
+
+                pending01.style.color = "black"
+                transaction01.style.color = "black"
+            }
+
+            function pending() {
+                let pending = document.getElementById("pendingid");
+                let tranjaction = document.getElementById("tranjactionid");
+                let success = document.getElementById("successid");
+                let pending01 = document.querySelector(".pending");
+
+                let success01 = document.querySelector(".success");
+                let transaction01 = document.querySelector(".all_transaction")
+
+                pending.style.display = "block";
+                tranjaction.style.display = "none";
+                success.style.display = "none";
+                pending01.style.color = "blue"
+                pending01.style.borderBottom = "2px solid blue"
+                success01.style.borderBottom = "none"
+                transaction01.style.borderBottom = "none"
+                success01.style.color = "black"
+                transaction01.style.color = "black"
+
+            }
+
+            function all_transaction() {
+                let pending = document.getElementById("pendingid");
+                let tranjaction = document.getElementById("tranjactionid");
+                let success = document.getElementById("successid");
+                let transaction01 = document.querySelector(".all_transaction")
+                let pending01 = document.querySelector(".pending");
+                let success01 = document.querySelector(".success");
+
+
+                pending.style.display = "none";
+                tranjaction.style.display = "block";
+                success.style.display = "none";
+                transaction01.style.color = "blue"
+                transaction01.style.borderBottom = "2px solid blue"
+                success01.style.borderBottom = "none"
+                pending01.style.borderBottom = "none"
+
+                pending01.style.color = "black"
+                success01.style.color = "black"
+            }
+        </script>
+</body>
+
+</html>
